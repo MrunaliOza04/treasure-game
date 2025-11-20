@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #0b0f17; /* night background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+canvas {
+  background: url('treasure-island-night.svg') no-repeat center/cover;
+  border: 2px solid #d4c79e;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(212,199,158,0.5);
+}
