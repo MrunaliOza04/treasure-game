@@ -1,15 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mrunali's Treasure Hunt</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Treasure Escape — Mrunali</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div id="wrap">
+    <canvas id="gameCanvas" width="700" height="700" aria-label="Treasure Escape Game"></canvas>
 
-  <canvas id="gameCanvas" width="700" height="700"></canvas>
+    <div id="ui">
+      <div id="status">Find the key, then reach the chest!</div>
+      <div id="info">Keys: <span id="key-count">0</span>/1</div>
+    </div>
 
-  <script src="game.js"></script>
+    <div id="win" class="hidden" role="dialog" aria-modal="true">
+      <div id="win-inner">
+        <h2>You escaped with the treasure!</h2>
+        <p>Nice work — contact: <a href="mailto:mrunalioza4004@gmail.com">mrunalioza4004@gmail.com</a></p>
+        <button id="restart">Play again</button>
+      </div>
+    </div>
+  </div>
+
+<script src="game.js" defer></script>
 </body>
 </html>
