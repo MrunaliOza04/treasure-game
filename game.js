@@ -137,3 +137,4 @@ restartBtn.addEventListener('click', resetGame);
 resetGame();
 loop();
 
+
